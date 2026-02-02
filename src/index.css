@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media print {
+  .print\:hidden {
+    display: none !important;
+  }
+
+  .print\:pt-0 {
+    padding-top: 0 !important;
+  }
+
+  body {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+}
